@@ -1,9 +1,14 @@
 <template>
   <div class="container">
-    <h1 class="title">
-      sebas-motion
-    </h1>
-  </div>
+    <div class="reel">
+      <iframe src="https://player.vimeo.com/video/280485594" frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture" marginwidth="0"
+        hspace="0" vspace="0" scrolling="no" loading="lazy"
+        allowfullscreen title="sebas_motion Reel">
+        <p>Sebas_Motion animation Reel</p>
+      </iframe>
+    </div>
+   </div>
 </template>
 
 <script>
@@ -18,5 +23,17 @@ export default {};
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+.reel {
+  width: 800px;
+  height: 450px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.reel iframe,
+.reel object,
+.reel embed {
+  width:100%;
+  height:100%;
 }
 </style>
