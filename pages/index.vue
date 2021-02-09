@@ -8,6 +8,9 @@
         <p>Sebas_Motion animation Reel</p>
       </iframe>
     </div>
+    <h3>
+      Sebastián López is a freelance motion designer from Colombia.
+    </h3>
    </div>
 </template>
 
@@ -18,15 +21,17 @@ export default {};
 <style>
 .container {
   margin: 0 auto;
+  padding: 10.6rem 0;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 .reel {
-  width: 800px;
-  height: 450px;
+  width: 65vw;
+  height: 70vh;
   border-radius: 30px;
   overflow: hidden;
 }
@@ -35,5 +40,10 @@ export default {};
 .reel embed {
   width:100%;
   height:100%;
+}
+h3 {
+  margin: 5.3rem 0;
+  font-size: 3.6rem;
+  width: 60vw;
 }
 </style>
