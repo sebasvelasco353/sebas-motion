@@ -16,13 +16,18 @@ export default {
 
 <style scoped>
 .nav{
+  top: 0;
+  width: 100%;
   display: flex;
+  position: fixed;
+  padding: 30px 40px;
   flex-direction: row;
   justify-content: space-between;
 
   font-size: 2rem;
   color: rgb(115, 251, 253);
-  padding: 30px 40px;
+
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
 }
 a {
   margin: 0 5px;
