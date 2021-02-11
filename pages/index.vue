@@ -1,16 +1,17 @@
 <template>
   <div class="container">
     <div class="reel">
-      <iframe src="https://player.vimeo.com/video/280485594" frameborder="0"
-        allow="autoplay; fullscreen; picture-in-picture" marginwidth="0"
-        hspace="0" vspace="0" scrolling="no" loading="lazy"
-        allowfullscreen title="sebas_motion Reel">
-        <p>Sebas_Motion animation Reel</p>
-      </iframe>
+      <!-- TODO: poner auto-play cuando termine pq me estoy enloqueciendo con la
+      musica cada segundo -->
+      <video height="100%" width="100%" controls>
+        <source src="@/assets/video/Reel_2021.mp4" type="video/mp4">
+        Tu navegador no tiene soporte para videos.
+      </video>
     </div>
     <h3>
       Sebastián López is a freelance motion designer from Colombia.
     </h3>
+    <img src="@/assets/images/separator.svg" alt="Separator images">
    </div>
 </template>
 
@@ -30,19 +31,16 @@ export default {};
   text-align: center;
 }
 .reel {
-  width: 65vw;
-  height: 70vh;
+  width: 75vw;
+  height: 80vh;
   border-radius: 30px;
   overflow: hidden;
 }
-.reel iframe,
-.reel object,
-.reel embed {
-  width:100%;
-  height:100%;
+img {
+ margin: 0 auto;
 }
 h3 {
-  margin: 5.3rem 0;
+  margin: 11.2rem 0;
   font-size: 3.6rem;
   width: 60vw;
 }

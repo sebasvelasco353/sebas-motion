@@ -1,13 +1,15 @@
 <template>
   <div class="nav">
-     <a href="/">
-      <img src="@/assets/logo.svg" alt="Sebas.Motion Logo">
-    </a>
-    <div class="links">
-      <a href="/work">Work</a>
-      <a href="/about">About</a>
+    <div class="nav__container">
+      <a href="/">
+        <img src="@/assets/logo.svg" alt="Sebas.Motion Logo">
+      </a>
+      <div class="links">
+        <a href="/work">Work</a>
+        <a href="/about">About</a>
+      </div>
     </div>
-  </div>
+   </div>
 </template>
 
 <script>
@@ -18,16 +20,21 @@ export default {
 
 <style scoped>
 .nav{
+  position: fixed;
   top: 0;
+  width: 100vw;
+  font-size: 3.6rem;
+  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+}
+.nav__container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 0 50px;
   display: flex;
+  padding: 0 50px;
   flex-direction: row;
   justify-content: space-between;
   text-align: center;
-  font-size: 3.6rem;
-  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+
 }
 a {
   margin: 0 5px;
