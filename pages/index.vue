@@ -20,8 +20,9 @@ export default {};
 
 <style>
 .container {
-  margin: 10.6rem 50px;
+  margin: 0 auto;
   max-width: 1440px;
+  padding: 10.6rem 50px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
