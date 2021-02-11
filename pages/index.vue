@@ -20,13 +20,12 @@ export default {};
 
 <style>
 .container {
-  margin: 0 auto;
-  padding: 10.6rem 0;
+  margin: 10.6rem 50px;
+  max-width: 1440px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   text-align: center;
 }
 .reel {
