@@ -12,11 +12,25 @@
       Sebastián López is a freelance motion designer from Colombia.
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images">
+    <div class="projects">
+      <article>
+        <nuxt-content :document="testProject"/>
+      </article>
+
+    </div>
    </div>
 </template>
 
 <script>
-export default {};
+export default {
+  async asyncData({ $content }) {
+    const testProject = await $content('projects/test_project', { deep: true }).fetch();
+    console.log(testProject);
+    return {
+      testProject,
+    };
+  },
+};
 </script>
 
 <style>
