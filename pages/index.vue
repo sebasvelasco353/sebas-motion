@@ -13,10 +13,9 @@
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images">
     <div class="projects">
-      <article>
-        <nuxt-content :document="testProject"/>
+      <article v-for="project in projects" :key="project.slug">
+        <img :src="project.image" alt="">
       </article>
-
     </div>
    </div>
 </template>
@@ -24,10 +23,10 @@
 <script>
 export default {
   async asyncData({ $content }) {
-    const testProject = await $content('projects/test_project', { deep: true }).fetch();
-    console.log(testProject);
+    const projects = await $content('projects', { deep: true }).fetch();
+    console.log(projects);
     return {
-      testProject,
+      projects,
     };
   },
 };
