@@ -13,18 +13,20 @@
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images">
     <div class="projects">
-      <article v-for="project in projects" :key="project.slug">
-        <img :src="project.image" alt="">
-      </article>
+      <project-preview v-for="project in projects" :key="project.slug" :element="project" />
     </div>
    </div>
 </template>
 
 <script>
+import projectPreview from '../components/projectPreview.vue';
+
 export default {
+  components: {
+    projectPreview,
+  },
   async asyncData({ $content }) {
     const projects = await $content('projects', { deep: true }).fetch();
-    console.log(projects);
     return {
       projects,
     };
@@ -36,7 +38,7 @@ export default {
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 10.6rem 50px;
+  padding: 10.6em 50px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -53,8 +55,13 @@ img {
  margin: 0 auto;
 }
 h3 {
-  margin: 11.2rem 0;
-  font-size: 3.6rem;
+  margin: 5em 0;
+  font-size: 3.6em;
   width: 60vw;
+}
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 </style>

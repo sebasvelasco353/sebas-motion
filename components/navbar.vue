@@ -23,7 +23,7 @@ export default {
   position: fixed;
   top: 0;
   width: 100vw;
-  font-size: 3.6rem;
+  font-size: 3.6em;
   background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
 }
 .nav__container {
