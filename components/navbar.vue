@@ -20,11 +20,12 @@ export default {
 
 <style scoped>
 .nav{
+  padding-top: 3rem;
   position: fixed;
   top: 0;
   width: 100vw;
   font-size: 3.6em;
-  background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
+  background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.666667) 48.44%, rgba(0, 0, 0, 0) 100%);
 }
 .nav__container {
   margin: 0 auto;

@@ -38,7 +38,7 @@ export default {
 .container {
   margin: 0 auto;
   max-width: 1440px;
-  padding: 10.6em 50px;
+  padding: 10.6rem 50px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -55,9 +55,9 @@ img {
  margin: 0 auto;
 }
 h3 {
-  margin: 5em 0;
-  font-size: 3.6em;
-  width: 60vw;
+  margin: 5rem auto;
+  font-size: 3.6rem;
+  width: 50%;
 }
 .projects {
   width: 100%;
