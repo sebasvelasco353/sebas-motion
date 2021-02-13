@@ -1,8 +1,7 @@
 <template>
-  <div class="projPreview__container" :style="{backgroundImage: `url(${element.image})`}" >
-    <div class="inner">
-      <p>{{ element.title }}</p>
-    </div>
+  <div class="projPreview__container">
+    <img class="bg" :src="element.image" :alt="element.title" />
+    <p>{{ element.title }}</p>
   </div>
 </template>
 
@@ -27,13 +26,21 @@ export default {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.bg {
+  width:100%;
+  height: 100%;
+  position: absolute ;
+  filter: brightness(60%);
 }
 p {
   font-family: 'Lato';
   font-weight: 500;
+  position: absolute;
   font-size: 2rem;
   color: #FFFFFF;
-  opacity: 1;
 }
 
 </style>
