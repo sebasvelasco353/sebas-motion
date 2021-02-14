@@ -1,8 +1,10 @@
 <template>
-  <div class="projPreview__container">
-    <img class="bg" :src="element.image" :alt="element.title" />
-    <p>{{ element.title }}</p>
-  </div>
+  <nuxt-link :to="`projects/${element.slug}`">
+    <div class="projPreview__container">
+      <img class="bg" :src="element.image" :alt="element.title" />
+      <p>{{ element.title }}</p>
+    </div>
+  </nuxt-link>
 </template>
 
 <script>

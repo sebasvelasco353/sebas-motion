@@ -1,9 +1,8 @@
 # sebas-motion
 
 ## TODO: 
-- acomodar margenes. 5p
 - controles de video sobreponen menu. 2p
-- tamanos de projectPreview 3p
+- responsive!!!!  3p
 - link a proyecto 3p
 - pagina proyecto 3p
 
@@ -23,5 +22,3 @@ $ npm run start
 # generate static project
 $ npm run generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
