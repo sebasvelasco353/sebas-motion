@@ -1,5 +1,7 @@
 <template>
-  <p>{{   }}</p>
+  <div class="container">
+    <p>{{ project.title }}</p>
+  </div>
 </template>
 
 <script>
@@ -15,5 +17,8 @@ export default {
 </script>
 
 <style>
-
+p {
+  color: white;
+  font-size: 1.6rem;
+}
 </style>

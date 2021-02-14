@@ -37,6 +37,14 @@ body {
 
     color: rgb(115, 251, 253);
 }
-body, * {
-    //border: solid red 1px;
+.container {
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: 10.6rem 50px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: center;
 }
+

@@ -3,7 +3,6 @@
   <div class="projPreview__container" :class="isLarge">
       <img class="bg" :src="element.image" :alt="element.title" />
       <p>{{ element.title }}</p>
-      <p>{{ large }}</p>
   </div>
 </nuxt-link>
 </template>
@@ -37,6 +36,9 @@ a {
 }
 a:nth-child(2n) {
   margin-right: 0;
+}
+img {
+ margin: 0 auto;
 }
 .projPreview__container {
   display: flex;
