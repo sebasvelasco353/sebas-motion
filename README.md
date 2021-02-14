@@ -1,9 +1,9 @@
 # sebas-motion
+Animador y motion graphics artist Colombiano, es bien cool el man.
 
 ## TODO: 
-- controles de video sobreponen menu. 2p
 - responsive!!!!  3p
-- link a proyecto 3p
+- link a proyecto 1p
 - pagina proyecto 3p
 
 ## Build Setup

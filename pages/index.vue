@@ -13,7 +13,7 @@
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images">
     <div class="projects">
-      <project-preview v-for="project in projects" :key="project.slug" :element="project" />
+      <project-preview v-for="(project, index) in projects" :key="project.slug" :element="project" :large="index%2" />
     </div>
    </div>
 </template>
