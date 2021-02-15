@@ -4,6 +4,7 @@
     <div class="container">
       <Nuxt />
     </div>
+    <custom-footer class="footer" />
   </div>
 </template>
 

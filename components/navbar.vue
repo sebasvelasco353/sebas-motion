@@ -1,5 +1,5 @@
 <template>
-  <div class="nav">
+  <nav>
     <div class="nav__container">
       <a href="/">
         <img src="@/assets/logo.svg" alt="Sebas.Motion Logo">
@@ -9,7 +9,7 @@
         <a href="/about">About</a>
       </div>
     </div>
-   </div>
+   </nav>
 </template>
 
 <script>
@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style scoped>
-.nav{
+nav{
   padding-top: 3rem;
   position: fixed;
   top: 0;
