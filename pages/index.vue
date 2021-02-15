@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div>
     <div class="reel">
       <!-- TODO: poner auto-play cuando termine pq me estoy enloqueciendo con la
       musica cada segundo -->
