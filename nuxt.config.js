@@ -11,7 +11,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Portafolio de Sebas-Motion, Sebastian Lopez, animador y motion graphics artist de Cali Colombia.' },
+      { hid: 'robots', name: 'robots', content: 'index, follow' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

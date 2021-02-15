@@ -4,9 +4,9 @@ description: esta es una pagina de prueba para ver como se hace esto porque en r
 image: "historiasEnJuego.gif"
 ---
 
-# Titulo random como los del america
+# Historias en juego.
 
-Estoy escribiendo algo
+Proyecto realizado etc etc
 
 ## que dice la banda!
 
