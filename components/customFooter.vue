@@ -19,7 +19,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 footer {
   width: 100%;
   font-size: 2.8rem;
@@ -30,10 +30,10 @@ footer {
   justify-content: space-between;
   align-items: center;
 
-  max-width: 1440px;
   margin: 0 auto;
-  height: 40rem;
-  padding: 5rem;
+  max-width: 1440px;
+  padding: 10.6rem 50px;
+  padding-left: 150px;
 }
 a {
   color: white;
