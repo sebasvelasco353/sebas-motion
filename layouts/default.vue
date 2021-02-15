@@ -10,7 +10,8 @@
 
 <style scoped>
 .navbar {
-  position: absolute;
+  position: fixed;
+  top: 0;
   z-index: 1000;
 }
 .container {
