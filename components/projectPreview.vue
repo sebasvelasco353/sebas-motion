@@ -14,29 +14,21 @@ export default {
       type: Object,
       required: true,
     },
-    large: {
+    index: {
       type: Number,
-      required: false,
-      default: 0,
+      required: true,
     },
   },
-  data({ large }) {
+  data({ index }) {
+    console.log(index);
     return {
-      isLarge: large === 1 ? 'large' : null,
+      isLarge: index % 2 ? 'large' : null,
     };
   },
 };
 </script>
 
 <style scoped>
-a {
-  width: 40%;
-  height: 100%;
-  margin: 10rem 8rem;
-}
-a:nth-child(2n) {
-  margin-right: 0;
-}
 .projPreview__container {
   display: flex;
   width: 100%;

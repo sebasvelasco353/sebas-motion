@@ -13,7 +13,7 @@
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images">
     <div class="projects">
-      <project-preview v-for="(project, index) in projects" :key="project.slug" :element="project" :large="index%2" />
+      <project-preview v-for="(project, index) in projects" :key="project.slug" :element="project" :index="index" />
     </div>
    </div>
 </template>
@@ -50,9 +50,15 @@ h3 {
   width: 50%;
 }
 .projects {
+  margin: 15rem 0;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr  1fr;
+  column-gap: 5rem;
+  row-gap: 5rem;
+  /*display: flex;*/
+  /*flex-direction: row;*/
+  /*flex-wrap: wrap;*/
 }
 </style>
