@@ -20,6 +20,7 @@ export default {
     },
   },
   data({ index }) {
+    console.log(index);
     /*
       TODO: Si voy a mostrar siempre los ultimos 5 proyectos lo que puedo hacer es definir las 5 areas
       con nombres 1...5 y llamar en el index a los ultimos 5 proyectos y a cada uno asignarle un espacio en grid
@@ -30,12 +31,8 @@ export default {
     const finalIndex = index + 1;
     const isLarge = finalIndex % 2 === 0 ? 'large' : null;
     const gridPosition = {
-      gridColumnStart: (finalIndex),
-      gridColumnEnd: (finalIndex + 1),
-      gridRowStart: (finalIndex),
-      gridRowEnd: (finalIndex + 1),
+      gridArea: index,
     };
-    console.log(gridPosition);
     return {
       isLarge,
       gridPosition,

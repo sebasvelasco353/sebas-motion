@@ -26,7 +26,7 @@ export default {
     projectPreview,
   },
   async asyncData({ $content }) {
-    const projects = await $content('projects', { deep: true }).fetch();
+    const projects = await $content('projects', { deep: true }).limit(4).sortBy('fecha', 'desc').fetch();
     return {
       projects,
     };
@@ -57,8 +57,9 @@ h3 {
   grid-template-rows: 1fr 1fr  1fr;
   column-gap: 5rem;
   row-gap: 5rem;
-  /*display: flex;*/
-  /*flex-direction: row;*/
-  /*flex-wrap: wrap;*/
-}
+  grid-template-areas:
+    "0" "1"
+    "2" "1"
+    "2" "3";
+ }
 </style>
