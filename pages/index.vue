@@ -54,12 +54,12 @@ h3 {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr  1fr;
+  grid-template-rows: auto;
   column-gap: 5rem;
   row-gap: 5rem;
   grid-template-areas:
-    "0" "1"
-    "2" "1"
-    "2" "3";
+    "a 1"
+    "2 1"
+    "2 3";
  }
 </style>

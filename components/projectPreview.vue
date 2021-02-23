@@ -19,7 +19,7 @@ export default {
       required: true,
     },
   },
-  data({ index }) {
+  data({ element, index }) {
     console.log(index);
     /*
       TODO: Si voy a mostrar siempre los ultimos 5 proyectos lo que puedo hacer es definir las 5 areas
@@ -30,8 +30,9 @@ export default {
     */
     const finalIndex = index + 1;
     const isLarge = finalIndex % 2 === 0 ? 'large' : null;
+    console.log(`my index is: ${index} and im ${element.title} `);
     const gridPosition = {
-      gridArea: index,
+      gridArea: index === 0 ? 'a' : index.toString(),
     };
     return {
       isLarge,
@@ -42,10 +43,14 @@ export default {
 </script>
 
 <style scoped>
+a {
+  width: 100%;
+  height: 30rem;
+}
 .projPreview__container {
   display: flex;
   width: 100%;
-  height: 30.5rem;
+  height: 100%;
   flex: 1;
   border-radius: 30px;
   justify-content: center;
