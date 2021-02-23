@@ -54,7 +54,7 @@ h3 {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: 1fr 1fr 1fr;
   column-gap: 5rem;
   row-gap: 5rem;
   grid-template-areas:

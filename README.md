@@ -2,12 +2,10 @@
 Animador y motion graphics artist Colombiano, es bien cool el man.
 
 ## TODO: 
-- responsive!!!!  3p
+- responsive!!!!  3p NEEDS TO BE DONE ASAP
 - pagina proyecto 3p
 - margenes de proyectos (small and large) 2p
 - arreglar object fit de imagen de proyecto 3p
-- Tamanos de imagenes!!!! 2p
-- SEO en cada pagina 4p
 - animacion del logo de lopez 3p
 
 ## Build Setup

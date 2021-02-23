@@ -45,7 +45,7 @@ export default {
 <style scoped>
 a {
   width: 100%;
-  height: 30rem;
+  max-height: 28rem;
 }
 .projPreview__container {
   display: flex;
