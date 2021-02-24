@@ -1,15 +1,13 @@
 <template>
-  <nav>
-    <div class="nav__container">
-      <a href="/">
-        <img src="@/assets/logo.svg" alt="Sebas.Motion Logo">
-      </a>
-      <div class="links">
-        <a href="/work">Work</a>
-        <a href="/about">About</a>
-      </div>
+  <nav class="nav__container flex flex-row justify-between px-40 py-32 pt-5">
+    <a href="/">
+      <img src="@/assets/logo.svg" alt="Sebas.Motion Logo">
+    </a>
+    <div class="links flex flex-row text-center content-center align-middle">
+      <a href="/work">Work</a>
+      <a href="/about">About</a>
     </div>
-   </nav>
+  </nav>
 </template>
 
 <script>
@@ -20,25 +18,8 @@ export default {
 
 <style scoped>
 nav{
-  padding-top: 3rem;
-  width: 100%;
-  font-size: 3.6em;
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.666667) 48.44%, rgba(0, 0, 0, 0) 100%);
 }
-.nav__container {
-  margin: 0 auto;
-  max-width: 1440px;
-  display: flex;
-  padding: 0 50px;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-
-}
-a {
-  margin: 0 5px;
-  font-weight: 600;
-  text-decoration: none;
-  color: rgb(115, 251, 253);
+.links {
 }
 </style>
