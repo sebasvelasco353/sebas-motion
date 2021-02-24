@@ -29,6 +29,9 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 400;
 
   margin: 0 auto;
   max-width: 1440px;
