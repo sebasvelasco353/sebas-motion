@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=M+PLUS+Rounded+1c:wght@500&family=Poppins:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    /*maybe download the fonts in case everything goes down the shitter?*/
+    /*@font-face {*/
+        /*font-family: Poppins;*/
+        /*font-weight: 600;*/
+        /*src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');*/
+    /*},*/
+    /*@font-face {*/
+        /*font-family: Poppins;*/
+        /*font-weight: 400;*/
+        /*src: url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
+    /*},*/
+    /*@font-face {*/
+        /*font-family: mplus;*/
+        /*font-weight: 500;*/
+        /*src: url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500&display=swap');*/
+    /*},*/
+    /*@font-face {*/
+        /*font-family: lato;*/
+        /*font-weight: 400;*/
+        /*src: url('https://fonts.googleapis.com/css2?family=Lato&display=swap');*/
+    /*}*/
+
+    * {
+        border: 1px red solid;
+    }
+
+    body {
+        font-size: 10px;
+        background-color: black;
+        color: rgb(115, 251, 253);
+        font-family: 'Poppins', sans-serif;
+    }
+    h3 {
+        @apply text-6xl;
+    }
+    p {
+        @apply m-4;
+        @apply text-4xl;
+    }
+}
