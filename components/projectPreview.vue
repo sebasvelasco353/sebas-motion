@@ -1,5 +1,5 @@
 <template>
-<nuxt-link :to="`projects/${element.slug}`" :style="gridPosition" exact>
+<nuxt-link :to="`${element.path}`" :style="gridPosition" exact>
   <div class="projPreview__container" :class="isLarge">
     <img class="bg" :src="require(`@/assets/images/${element.image}`)" :alt="element.title" />
     <p>{{ element.title }}</p>
@@ -19,8 +19,7 @@ export default {
       required: true,
     },
   },
-  data({ element, index }) {
-    console.log(index);
+  data({ index }) {
     /*
       TODO: Si voy a mostrar siempre los ultimos 5 proyectos lo que puedo hacer es definir las 5 areas
       con nombres 1...5 y llamar en el index a los ultimos 5 proyectos y a cada uno asignarle un espacio en grid
@@ -30,7 +29,6 @@ export default {
     */
     const finalIndex = index + 1;
     const isLarge = finalIndex % 2 === 0 ? 'large' : null;
-    console.log(`my index is: ${index} and im ${element.title} `);
     const gridPosition = {
       gridArea: index === 0 ? 'a' : index.toString(),
     };

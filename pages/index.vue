@@ -26,7 +26,8 @@ export default {
     projectPreview,
   },
   async asyncData({ $content }) {
-    const projects = await $content('projects', { deep: true }).limit(4).sortBy('fecha', 'desc').fetch();
+    const projects = await $content('projects', { deep: true }).only(['title', 'image']).limit(4).sortBy('fecha', 'desc')
+      .fetch();
     return {
       projects,
     };
