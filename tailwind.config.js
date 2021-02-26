@@ -15,7 +15,22 @@ module.exports = {
       black: '#000000',
       white: '#FFFFFF',
     },
-    extend: {},
+    keyframes: {
+      menuIn: {
+        '0%': { opacity: '0', transform: 'translateY(-100px)' },
+        '100%': { opacity: '1', transform: 'translateY(0px)' },
+      },
+      menuOut: {
+        '100%': { opacity: '0', transform: 'translateY(0px)' },
+        '0%': { opacity: '1', transform: 'translateY(100px)' },
+      },
+    },
+    animation: {
+      menuIn: 'menuIn 0.5s ease-in-out',
+      menuOut: 'menuOut 0.5s ease-in-out',
+    },
+    extend: {
+    },
   },
   variants: {
     extend: {},
