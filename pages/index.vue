@@ -3,7 +3,7 @@
     <div class="reel">
       <!-- TODO: poner auto-play cuando termine pq me estoy enloqueciendo con la
       musica cada segundo -->
-      <video height="100%" width="100%" controls>
+      <video height="100%" width="100%" controls autoplay>
         <source src="@/assets/video/Reel_2021.mp4" type="video/mp4">
         Tu navegador no tiene soporte para videos.
       </video>

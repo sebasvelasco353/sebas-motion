@@ -17,12 +17,12 @@ module.exports = {
     },
     keyframes: {
       menuIn: {
-        '0%': { opacity: '0', transform: 'translateY(-100px)' },
-        '100%': { opacity: '1', transform: 'translateY(0px)' },
+        '0%': { opacity: '0', transform: 'translateY(0rem)' },
+        '100%': { opacity: '1', transform: 'translateY(15rem)' },
       },
       menuOut: {
         '100%': { opacity: '0', transform: 'translateY(0px)' },
-        '0%': { opacity: '1', transform: 'translateY(100px)' },
+        '0%': { opacity: '1', transform: 'translateY(15rem)' },
       },
     },
     animation: {

@@ -13,11 +13,11 @@
       </button>
     </div>
     <nav
-      class="absolute left-0 z-20 flex flex-col flex-wrap content-center w-full text-center align-middle top-28 md:relative md:w-auto md:flex-row md:top-0"
+      class="absolute left-0 z-20 flex flex-col flex-wrap content-center w-full text-center align-middle -top-40 md:relative md:w-auto md:flex-row md:top-0"
       :class="navClasses"
     >
-      <a class="my-5 md:m-0 hover:underline" href="/work">Work</a>
-      <a class="my-5 md:m-0 hover:underline" href="/about">About</a>
+      <a class="my-5 md:m-0 hover:underline" href="/sebas-motion/work">Work</a>
+      <a class="my-5 md:m-0 hover:underline" href="/sebas-motion/about">About</a>
     </nav>
   </header>
 </template>
