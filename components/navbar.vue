@@ -26,7 +26,7 @@
 export default {
   data() {
     return {
-      menuState: false,
+      menuState: window.screen.width > 600,
     };
   },
   computed: {
