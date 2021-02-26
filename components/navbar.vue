@@ -1,23 +1,39 @@
 <template>
-  <header class="flex flex-row justify-between w-full pt-5 pb-32 px-11 space-x-4 nav__container">
-    <a class="w-24 m-0" href="/">
-      <img class="align-middle" src="@/assets/logo.svg" alt="Sebas.Motion Logo">
-    </a>
-    <nav class="flex flex-row content-center text-center align-middle space-x-4">
-      <a class="hover:underline m-0" href="/work">Work</a>
-      <a class="hover:underline m-0" href="/about">About</a>
+  <header class="flex flex-col justify-between w-full pt-5 pb-20 md:flex-row px-11 md:space-x-4 nav__container">
+    <div class="flex flex-row justify-between">
+      <a class="w-24 m-0" href="/">
+        <img class="align-middle" src="@/assets/logo.svg" alt="Sebas.Motion Logo">
+      </a>
+      <button class="md:hidden" v-on:click="menuClick()">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="15" rx="8"></rect>
+          <rect y="30" width="100" height="15" rx="8"></rect>
+          <rect y="60" width="100" height="15" rx="8"></rect>
+        </svg>
+      </button>
+    </div>
+    <nav class="absolute left-0 z-20 flex flex-col flex-wrap content-center w-full text-center align-middle md:relative top-16 md:top-0 md:w-auto md:flex-row">
+      <a class="m-0 hover:underline" href="/work">Work</a>
+      <a class="m-0 hover:underline" href="/about">About</a>
     </nav>
   </header>
 </template>
 
 <script>
 export default {
-
+  methods: {
+    menuClick() {
+      console.log('hello my friend');
+    },
+  },
 };
 </script>
 
 <style scoped>
 header{
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.666667) 48.44%, rgba(0, 0, 0, 0) 100%);
+}
+rect {
+  fill: #01FFFF;
 }
 </style>
