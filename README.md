@@ -2,6 +2,7 @@
 Animador y motion graphics artist Colombiano, es bien cool el man.
 
 ## TODO: 
+- DEPLOY THIS TEST VIA GH ACTIONS!!!!!!!!!!!!
 - pagina proyecto 3p
 - animacion del logo de lopez 3p
 
