@@ -1,13 +1,13 @@
 <template>
-  <nav class="nav__container flex flex-row justify-between px-40 py-32 pt-5">
-    <a href="/">
-      <img src="@/assets/logo.svg" alt="Sebas.Motion Logo">
+  <header class="flex flex-row justify-between w-full pt-5 pb-32 px-11 space-x-4 nav__container">
+    <a class="w-24 m-0" href="/">
+      <img class="align-middle" src="@/assets/logo.svg" alt="Sebas.Motion Logo">
     </a>
-    <div class="links flex flex-row text-center content-center align-middle">
-      <a href="/work">Work</a>
-      <a href="/about">About</a>
-    </div>
-  </nav>
+    <nav class="flex flex-row content-center text-center align-middle space-x-4">
+      <a class="hover:underline m-0" href="/work">Work</a>
+      <a class="hover:underline m-0" href="/about">About</a>
+    </nav>
+  </header>
 </template>
 
 <script>
@@ -17,9 +17,7 @@ export default {
 </script>
 
 <style scoped>
-nav{
+header{
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.666667) 48.44%, rgba(0, 0, 0, 0) 100%);
-}
-.links {
 }
 </style>

@@ -13,18 +13,18 @@
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images">
     <div class="projects">
-      <!-- <project-preview v-for="(project, index) in projects" :key="project.slug" :element="project" :index="index" /> -->
+      <project-preview v-for="(project, index) in projects" :key="project.slug" :element="project" :index="index" />
     </div>
    </div>
 </template>
 
 <script>
-/* import projectPreview from '../components/projectPreview.vue'; */
+import projectPreview from '../components/projectPreview.vue';
 
 export default {
-  /* components: {
+  components: {
     projectPreview,
-  }, */
+  },
   async asyncData({ $content }) {
     const projects = await $content('projects', { deep: true }).only(['title', 'image']).limit(4).sortBy('fecha', 'desc')
       .fetch();

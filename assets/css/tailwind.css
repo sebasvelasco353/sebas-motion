@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=M+PLUS+Rounded+1c:wght@500&family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @layer base {
     /*maybe download the fonts in case everything goes down the shitter?*/
@@ -31,12 +31,12 @@
     * {
         border: 1px red solid;
     }
-
     body {
         font-size: 10px;
-        background-color: black;
-        color: rgb(115, 251, 253);
         font-family: 'Poppins', sans-serif;
+
+        @apply bg-black;
+        @apply text-blue;
     }
     h3 {
         @apply text-6xl;
