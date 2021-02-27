@@ -13,7 +13,7 @@
       </button>
     </div>
     <nav
-      class="absolute left-0 z-10 flex flex-col flex-wrap content-center w-full h-screen text-center align-middle bg-black -top-full md:relative md:w-auto md:flex-row md:top-0 py-44"
+      class="absolute left-0 z-10 flex flex-col flex-wrap content-center w-full h-screen text-center align-middle bg-black -top-full md:relative md:w-auto md:flex-row md:top-0 py-44 md:h-auto md:py-0"
       :class="navClasses"
     >
       <a class="my-5 md:m-0 hover:underline" href="/sebas-motion/work">Work</a>
