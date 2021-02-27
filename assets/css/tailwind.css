@@ -29,7 +29,7 @@
     /*}*/
 
     * {
-        border: 1px red solid;
+        /*border: 1px red solid;*/
     }
     body {
         font-size: 10px;
@@ -39,7 +39,11 @@
         @apply text-blue;
     }
     h3 {
-        @apply text-6xl;
+        @apply my-6;
+
+        @apply text-center;
+        @apply text-2xl;
+        @apply md:text-6xl;
     }
     p, a {
         @apply m-4;

@@ -1,7 +1,7 @@
 <template>
   <div>
-    <navbar class="navbar"/>
-    <div class="container">
+    <navbar class="fixed top-0 z-50 navbar"/>
+    <div class="container px-8 mx-auto py-28">
       <Nuxt />
     </div>
     <!--    <custom-footer class="footer" /> -->
@@ -9,13 +9,7 @@
 </template>
 
 <style scoped>
-.navbar {
-  width:  100%;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
-}
-.container {
+/*.container {
   margin: 0 auto;
   max-width: 1440px;
   padding: 10.6rem 50px;
@@ -25,5 +19,5 @@
   flex-direction: column;
   align-items: flex-end;
   text-align: center;
-}
+}*/
 </style>
