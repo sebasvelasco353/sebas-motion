@@ -4,12 +4,13 @@
     <div class="container">
       <Nuxt />
     </div>
-    <custom-footer class="footer" />
+    <!--    <custom-footer class="footer" /> -->
   </div>
 </template>
 
 <style scoped>
 .navbar {
+  width:  100%;
   position: fixed;
   top: 0;
   z-index: 1000;

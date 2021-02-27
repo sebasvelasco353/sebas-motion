@@ -1,44 +1,58 @@
 <template>
-  <nav>
-    <div class="nav__container">
-      <a href="/">
-        <img src="@/assets/logo.svg" alt="Sebas.Motion Logo">
+  <header class="flex flex-col justify-between w-full pt-5 pb-10 md:pb-20 md:flex-row px-11 md:space-x-4 nav__container">
+    <div class="flex flex-row justify-between">
+      <a class="w-24 m-0" href="/">
+        <img class="align-middle" src="@/assets/logo.svg" alt="Sebas.Motion Logo">
       </a>
-      <div class="links">
-        <a href="/work">Work</a>
-        <a href="/about">About</a>
-      </div>
+      <button class="md:hidden" v-on:click="menuClick()">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+          <rect width="100" height="15" rx="8"></rect>
+          <rect y="30" width="100" height="15" rx="8"></rect>
+          <rect y="60" width="100" height="15" rx="8"></rect>
+        </svg>
+      </button>
     </div>
-   </nav>
+    <nav
+      class="absolute left-0 z-20 flex flex-col flex-wrap content-center w-full text-center align-middle -top-40 md:relative md:w-auto md:flex-row md:top-0"
+      :class="navClasses"
+    >
+      <a class="my-5 md:m-0 hover:underline" href="/sebas-motion/work">Work</a>
+      <a class="my-5 md:m-0 hover:underline" href="/sebas-motion/about">About</a>
+    </nav>
+  </header>
 </template>
 
 <script>
 export default {
-
+  data() {
+    return {
+      menuState: window.screen.width > 600,
+    };
+  },
+  computed: {
+    navClasses() {
+      return {
+        'animate-menuIn': this.menuState,
+        'animate-menuOut': !this.menuState,
+      };
+    },
+  },
+  methods: {
+    menuClick() {
+      this.menuState = !this.menuState;
+    },
+  },
 };
 </script>
 
 <style scoped>
-nav{
-  padding-top: 3rem;
-  width: 100%;
-  font-size: 3.6em;
+header{
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.666667) 48.44%, rgba(0, 0, 0, 0) 100%);
 }
-.nav__container {
-  margin: 0 auto;
-  max-width: 1440px;
-  display: flex;
-  padding: 0 50px;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
-
+nav {
+  animation-fill-mode: forwards;
 }
-a {
-  margin: 0 5px;
-  font-weight: 600;
-  text-decoration: none;
-  color: rgb(115, 251, 253);
+rect {
+  fill: #01FFFF;
 }
 </style>

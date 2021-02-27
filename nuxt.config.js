@@ -1,4 +1,8 @@
 export default {
+  target: 'static',
+  router: {
+    base: '/sebas-motion/',
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -9,19 +13,18 @@ export default {
       lang: 'en',
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portafolio de Sebas-Motion, Sebastian Lopez, animador y motion graphics artist de Cali Colombia.' },
-      { hid: 'robots', name: 'robots', content: 'index, follow' },
+      {charset: 'utf-8'},
+      {name: 'viewport', content: 'width=device-width, initial-scale=1'},
+      {hid: 'description', name: 'description', content: 'Portafolio de Sebas-Motion, Sebastian Lopez, animador y motion graphics artist de Cali Colombia.'},
+      {hid: 'robots', name: 'robots', content: 'index, follow'},
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    '@/main.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -34,6 +37,7 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/tailwindcss',
     '@nuxtjs/eslint-module',
   ],
 
