@@ -1,6 +1,6 @@
 <template>
   <header class="flex flex-col justify-between w-full pt-5 pb-10 md:pb-20 md:flex-row px-11 md:space-x-4 nav__container">
-    <div class="flex flex-row justify-between">
+    <div class="z-20 flex flex-row justify-between">
       <a class="w-24 m-0" href="/">
         <img class="align-middle" src="@/assets/logo.svg" alt="Sebas.Motion Logo">
       </a>
@@ -13,7 +13,7 @@
       </button>
     </div>
     <nav
-      class="absolute left-0 z-20 flex flex-col flex-wrap content-center w-full text-center align-middle -top-40 md:relative md:w-auto md:flex-row md:top-0"
+      class="absolute left-0 z-10 flex flex-col flex-wrap content-center w-full h-screen text-center align-middle bg-black -top-full md:relative md:w-auto md:flex-row md:top-0 py-44"
       :class="navClasses"
     >
       <a class="my-5 md:m-0 hover:underline" href="/sebas-motion/work">Work</a>

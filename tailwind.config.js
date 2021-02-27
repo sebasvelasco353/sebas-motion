@@ -17,17 +17,17 @@ module.exports = {
     },
     keyframes: {
       menuIn: {
-        '0%': { opacity: '0', transform: 'translateY(0rem)' },
-        '100%': { opacity: '1', transform: 'translateY(15rem)' },
+        '0%': { opacity: '0', top: '-200vh' },
+        '100%': { opacity: '1', top: '0' },
       },
       menuOut: {
-        '100%': { opacity: '0', transform: 'translateY(0px)' },
-        '0%': { opacity: '1', transform: 'translateY(15rem)' },
+        '0%': { opacity: '1', top: '0' },
+        '100%': { opacity: '0', top: '-200vh' },
       },
     },
     animation: {
-      menuIn: 'menuIn 0.5s ease-in-out',
-      menuOut: 'menuOut 0.5s ease-in-out',
+      menuIn: 'menuIn 0.8s ease-in-out',
+      menuOut: 'menuOut 0.8s ease-in-out',
     },
     extend: {
     },
