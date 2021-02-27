@@ -29,7 +29,7 @@
     /*}*/
 
     * {
-        border: 1px red solid;
+        /*border: 1px red solid;*/
     }
     body {
         font-size: 10px;
@@ -46,6 +46,7 @@
         @apply md:text-6xl;
     }
     p, a {
+        @apply text-white;
         @apply m-4;
         @apply font-semibold; 
         @apply text-4xl;

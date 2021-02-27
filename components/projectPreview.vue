@@ -1,8 +1,8 @@
 <template>
-<nuxt-link :to="`${element.path}`" :style="gridPosition" exact>
-  <div class="projPreview__container" :class="isLarge">
-    <img class="bg" :src="require(`@/assets/images/${element.image}`)" :alt="element.title" />
-    <p>{{ element.title }}</p>
+<nuxt-link :to="`${element.path}`" class="w-full mx-0 my-12"  exact>
+  <div class="relative flex items-center justify-center projPreview__container">
+    <img class="m-0 opacity-70 bg" :src="require(`@/assets/images/${element.image}`)" :alt="element.title" />
+    <p class="absolute z-30 text-3xl break-words w-60 ">{{ element.title }}</p>
   </div>
 </nuxt-link>
 </template>
@@ -20,14 +20,11 @@ export default {
     },
   },
   data({ index }) {
-    /*
-      TODO: Si voy a mostrar siempre los ultimos 5 proyectos lo que puedo hacer es definir las 5 areas
-      con nombres 1...5 y llamar en el index a los ultimos 5 proyectos y a cada uno asignarle un espacio en grid
-      que va de 1...5.
-
-      ahora, cuando este en view de un proyecto deberia poder moverme entre proyectos de formalibrew no solo los ultimos 5
-    */
-    const finalIndex = index + 1;
+    console.log(index);
+    return {
+      test: true,
+    };
+    /* const finalIndex = index + 1;
     const isLarge = finalIndex % 2 === 0 ? 'large' : null;
     const gridPosition = {
       gridArea: index === 0 ? 'a' : index.toString(),
@@ -35,13 +32,13 @@ export default {
     return {
       isLarge,
       gridPosition,
-    };
+    }; */
   },
 };
 </script>
 
 <style scoped>
-a {
+/*a {
   width: 100%;
   max-height: 28rem;
 }
@@ -72,5 +69,5 @@ p {
   font-size: 2rem;
   color: #FFFFFF;
 }
-
+ */
 </style>
