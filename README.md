@@ -2,23 +2,19 @@
 Animador y motion graphics artist Colombiano, es bien cool el man.
 
 ## TODO: 
-- DEPLOY THIS TEST VIA GH ACTIONS!!!!!!!!!!!!
-- pagina proyecto 3p
-- animacion del logo de lopez 3p
+- [] navbar on big screens
+- [] grid of the 4 project
+- [] only one column in small screens (projects)
+- [] project pages need to work with the new urls
+- [] performance
+- [] SEO on all pages
 
-## Build Setup
+## Sebas-motion
+Sebastian is a motion graphics and 2d animation artist from Cali, Colombia and this is his portfolio, it is
+made using NuxtJs and the Content module to create the projects based on MD files on a content folder.
 
-```bash
-# install dependencies
-$ npm install
+feel free to check his [Instagram](https://www.instagram.com/sebas_motion)
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
+## CI with github Pages and Github Actions
+this project has a .github folder that has the workflow needed to deploy a nuxt application as a 
+static web page in gh pages using gh actions, feel free to use that information as needed.
