@@ -9,7 +9,7 @@
       </video>
     </div>
     <h3>
-      Sebastián López is a freelance motion designer from Colombia.
+      Sebastián López is an awesome freelance motion designer from Colombia.
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images">
     <div class="projects">
