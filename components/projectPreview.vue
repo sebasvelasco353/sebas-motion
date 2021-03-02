@@ -1,5 +1,5 @@
 <template>
-<nuxt-link :to="`${element.path}`" class="w-full mx-0 my-12"  exact>
+<nuxt-link :to="`${element.path}`" class="col-span-1" :class="positionClass" exact>
   <div class="relative flex items-center justify-center projPreview__container">
     <img class="m-0 opacity-70 bg" :src="require(`@/assets/images/${element.image}`)" :alt="element.title" />
     <p class="absolute z-30 w-full text-3xl text-center break-words">{{ element.title }}</p>
@@ -19,20 +19,10 @@ export default {
       required: true,
     },
   },
-  data({ index }) {
-    console.log(index);
-    return {
-      test: true,
-    };
-    /* const finalIndex = index + 1;
-    const isLarge = finalIndex % 2 === 0 ? 'large' : null;
-    const gridPosition = {
-      gridArea: index === 0 ? 'a' : index.toString(),
-    };
-    return {
-      isLarge,
-      gridPosition,
-    }; */
+  computed: {
+    positionClass() {
+      return ((this.index + 1) % 2 === 0) ? 'row-span-2' : 'row-span-1';
+    },
   },
 };
 </script>
