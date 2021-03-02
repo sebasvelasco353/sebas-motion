@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer__container flex flex-row justify-between px-40 my-56">
+  <footer class="flex flex-col justify-between mb-4 md:flex-row footer__container">
     <div class="left">
       <p>Sebastian Lopez</p>
       <p>{{ new Date().getFullYear() }}</p>
@@ -20,5 +20,10 @@ export default {
 <style scoped>
 .footer__container {
   color: white;
+}
+p, a {
+  text-align: center;
+  margin: 0.5rem;
+  @apply text-base;
 }
 </style>

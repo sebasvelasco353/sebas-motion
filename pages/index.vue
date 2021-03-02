@@ -3,7 +3,7 @@
     <div class="w-full reel">
       <!-- TODO: poner auto-play cuando termine pq me estoy enloqueciendo con la
       musica cada segundo -->
-      <video height="100%" width="100%" controls>
+      <video height="100%" width="100%" class="rounded-2xl" controls autoplay>
         <source src="@/assets/video/Reel_2021.mp4" type="video/mp4">
         Tu navegador no tiene soporte para videos.
       </video>
@@ -12,8 +12,8 @@
       Sebastián López is an awesome freelance motion designer from Colombia.
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-0">
-    <div class="flex flex-col my-6 projects">
-      <project-preview v-for="(project, index) in projects" :key="project.slug" :element="project" :index="index" />
+    <div class="flex flex-col my-6 projects md:grid md:grid-cols-2 md:grid-rows-4 md:gap-6">
+      <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  />
     </div>
    </div>
 </template>
@@ -26,7 +26,7 @@ export default {
     projectPreview,
   },
   async asyncData({ $content }) {
-    const projects = await $content('projects', { deep: true }).only(['title', 'image']).limit(4).sortBy('fecha', 'desc')
+    const projects = await $content('projects', { deep: true }).only(['title', 'image']).sortBy('fecha', 'desc')
       .fetch();
     return {
       projects,
