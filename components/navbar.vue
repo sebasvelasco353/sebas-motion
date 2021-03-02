@@ -1,5 +1,6 @@
 <template>
-  <!-- TODO: max width of the navbar is xl but it has to be centered -->
+  <!-- TODO: max width of the navbar is 2xl but it has to be centered and fixed to the top... wrap your head around that -->
+  <!-- TODO: only trigger animation on menbu click small screens, no animation on startup its the correct way of doing stuff  -->
   <header class="flex flex-col justify-between w-full px-8 pt-5 pb-10 mx-auto md:pb-20 md:flex-row md:space-x-4 nav__container ">
     <div class="z-20 flex flex-row justify-between">
       <a class="w-24 m-0" href="/sebas-motion/">
@@ -27,8 +28,7 @@
 export default {
   data() {
     return {
-      /* menuState: window.screen.width > 600, */
-      menuState: true,
+      menuState: window.screen.width > 600,
     };
   },
   computed: {
