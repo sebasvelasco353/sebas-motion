@@ -21,7 +21,8 @@ export default {
   },
   computed: {
     positionClass() {
-      return ((this.index + 1) % 2 === 0) ? 'row-span-2' : 'row-span-1';
+      const position = ((this.index + 1) % 3 === 0) || ((this.index + 1) % 2 === 0) ? 'row-span-2' : 'row-span-1';
+      return position;
     },
   },
 };
