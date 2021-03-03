@@ -1,7 +1,7 @@
 <template>
 <nuxt-link :to="`${element.path}`" class="col-span-1" :class="positionClass" exact>
-  <div class="relative flex items-center justify-center w-full h-full overflow-hidden rounded-2xl projPreview__container">
-    <img class="w-full h-full m-0 opacity-70 bg" :src="require(`@/content/projects/${element.title}/${element.image}`)" :alt="element.title" />
+  <div class="projPreview__container">
+    <img class="bg" :src="require(`@/content/projects/${element.image}`)" :alt="element.title" />
     <p class="absolute z-30 w-full text-3xl text-center break-words">{{ element.title }}</p>
   </div>
 </nuxt-link>
@@ -29,8 +29,23 @@ export default {
 </script>
 
 <style scoped>
-p {
-  font-family: 'Lato';
-  @apply text-white;
+.bg {
+  @apply object-cover;
+  @apply w-full;
+  @apply h-full;
+  @apply m-0;
+  @apply opacity-70;
 }
+.projPreview__container {
+  font-family: 'Lato';
+  @apply relative;
+  @apply flex;
+  @apply items-center;
+  @apply justify-center;
+  @apply w-full;
+  @apply h-full;
+  @apply overflow-hidden;
+  @apply rounded-2xl;
+  @apply text-white;
+};
 </style>
