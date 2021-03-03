@@ -25,6 +25,10 @@ export default {
       return position;
     },
   },
+  data() {
+    console.log(this.element);
+    return {};
+  },
 };
 </script>
 
