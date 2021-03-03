@@ -1,7 +1,7 @@
 ---
 title: Instagram Posts
 description: esta es una pagina de prueba para ver como se hace esto porque en realidad no tengo idea de como se hace, igual que en la universidad.
-image: "Insta1.gif"
+image: "InstagramPosts/Insta1.gif"
 fecha: '22-02-2021'
 ---
 
