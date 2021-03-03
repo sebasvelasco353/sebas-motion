@@ -12,7 +12,7 @@
       Sebastián López is an awesome freelance motion designer from Colombia.
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-0">
-    <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-4 md:gap-6">
+    <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-12">
       <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  />
     </div>
    </div>
