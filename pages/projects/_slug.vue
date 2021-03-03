@@ -1,12 +1,11 @@
 <template>
   <!-- TODO: create custom layout for projects page, header needs to be 100vw  -->
   <div>
- <!--     <section class="header">
+    <section class="header">
       <img :src="require(`@/assets/images/${project.image}`)" :alt="project.title">
       <h1>{{ project.title  }}</h1>
     </section>
-    <nuxt-content :document="project" /> -->
-    <p>hello</p>
+    <nuxt-content :document="project" />
   </div>
 </template>
 
