@@ -2,6 +2,7 @@
 title: Historias en Juego
 description: esta es una pagina de prueba para ver como se hace esto porque en realidad no tengo idea de como se hace, igual que en la universidad.
 image: "HistoriasEnJuego/Historias1.gif"
+url: "/projects/HistoriasEnJuego"
 fecha: '22-02-2021'
 ---
 
