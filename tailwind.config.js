@@ -30,6 +30,8 @@ module.exports = {
       menuOut: 'menuOut 0.8s ease-in-out',
     },
     extend: {
+      spacing: {
+      },
     },
   },
   variants: {

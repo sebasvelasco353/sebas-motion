@@ -1,7 +1,7 @@
 <template>
   <div>
-    <navbar class="relative top-0 z-50 lg:max-w-screen-2xl md:px-8 navbar"/>
-    <div class="container px-8 mx-auto py-28 lg:max-w-screen-2xl md:pl-20">
+    <navbar />
+    <div class="container px-8 mx-auto py-28 md:pr-8 lg:pr-0 md:pl-20">
       <Nuxt />
     </div>
     <custom-footer class="w-full mx-auto lg:max-w-screen-2xl md:px-8" />
@@ -9,4 +9,7 @@
 </template>
 
 <style scoped>
+.container {
+ max-width: 1440px;
+}
 </style>
