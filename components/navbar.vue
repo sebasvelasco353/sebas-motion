@@ -1,5 +1,4 @@
 <template>
-  <!-- TODO: max width of the navbar is 2xl but it has to be centered and fixed to the top... wrap your head around that -->
   <!-- TODO: only trigger animation on menbu click small screens, no animation on startup its the correct way of doing stuff  -->
   <header class="nav__container">
     <div class="nav__inner">
