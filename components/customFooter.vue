@@ -23,7 +23,7 @@ export default {
 .footer__container {
   color: white;
   @apply flex;
-  @apply w-screen;
+  @apply w-full;
   @apply p-6;
 }
 .footer__inner {
@@ -32,12 +32,13 @@ export default {
   @apply flex;
   @apply flex-col;
   @apply md:flex-row;
-  @apply w-screen;
+  @apply w-full;
   @apply justify-between;
-  @apply  pl-20;
+  @apply md:pl-20;
 }
 p, a {
-  text-align: left;
+  @apply md:text-left;
+  @apply text-center;
   margin: 0.5rem 0;
   @apply text-base;
 }

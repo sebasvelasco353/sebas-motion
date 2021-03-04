@@ -54,7 +54,7 @@ header{
   @apply flex;
   @apply top-0;
   @apply z-50;
-  @apply w-screen;
+  @apply w-full;
   @apply p-6;
   @apply md:px-8;
   @apply md:pt-10;
