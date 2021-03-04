@@ -1,7 +1,7 @@
 <template>
   <!-- TODO: max width of the navbar is 2xl but it has to be centered and fixed to the top... wrap your head around that -->
   <!-- TODO: only trigger animation on menbu click small screens, no animation on startup its the correct way of doing stuff  -->
-  <header class="flex flex-col justify-between w-full px-8 pt-5 pb-10 mx-auto md:pb-20 md:flex-row md:space-x-4 nav__container ">
+  <header class="nav__container">
     <div class="z-20 flex flex-row justify-between">
       <a class="w-24 m-0" href="/sebas-motion/">
         <img class="align-middle" src="@/assets/logo.svg" alt="Sebas.Motion Logo">
@@ -50,9 +50,24 @@ export default {
 <style scoped>
 header{
   background: linear-gradient(180deg, #000000 0%, rgba(0, 0, 0, 0.666667) 48.44%, rgba(0, 0, 0, 0) 100%);
+  @apply flex;
+  @apply flex-col;
+  @apply justify-between;
+  @apply top-0;
+  @apply z-50;
+  @apply w-screen;
+  max-width:  1440px;
+  @apply p-6;
+  @apply lg:px-44;
+  @apply md:px-8;
+  @apply md:pt-10;
+  @apply md:pb-20;
+  @apply md:flex-row;
+  @apply fixed;
 }
 nav {
   animation-fill-mode: forwards;
+  @apply md:bg-opacity-0;
 }
 rect {
   fill: #01FFFF;
