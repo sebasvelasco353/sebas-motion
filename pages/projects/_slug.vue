@@ -5,14 +5,13 @@
       <img :src="require(`@/assets/images/${project.image}`)" :alt="project.title">
       <h1>{{ project.title  }}</h1>
     </section>
-    <nuxt-content :document="project" />
+    <nuxt-content class="content" :document="project" />
   </div>
 </template>
 
 <script>
 
 export default {
-  layout: 'project',
   data() {
     return {
     };
@@ -26,12 +25,20 @@ export default {
 
 <style scoped>
 .header {
-  position: relative;
+  position: absolute;
   height: 40vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+}
+.content {
+  @apply min-h-full;
+  padding-top: 40vh;
 }
 img {
   width: 100%;
   height: 100%;
+  @apply object-cover;
   position: absolute;
   filter: opacity(70%);
   top: 0;
