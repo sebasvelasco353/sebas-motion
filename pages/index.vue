@@ -8,7 +8,7 @@
         Tu navegador no tiene soporte para videos.
       </video>
     </div>
-    <h3 class="mt-12 text-6xl md:mt-24">
+    <h3 class="mt-12 text-4xl md:text-6xl md:mt-24">
       Sebastián López is an awesome freelance motion designer from Colombia.
     </h3>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-52">
@@ -36,4 +36,7 @@ export default {
 </script>
 
 <style scoped>
+h3 {
+  padding: 0 20%;
+}
 </style>

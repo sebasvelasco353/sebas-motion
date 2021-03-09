@@ -17,5 +17,17 @@ module.exports = {
   rules: {
     'max-len': [1, { code: 200 }],
     'consistent-return': 1,
+    'at-rule-no-unknown': [
+      0,
+      {
+        ignoreAtRules: [
+          'tailwind',
+          'apply',
+          'variants',
+          'responsive',
+          'screen',
+        ],
+      },
+    ],
   },
 };

@@ -12,6 +12,7 @@
 <script>
 
 export default {
+  layout: 'project',
   data() {
     return {
     };

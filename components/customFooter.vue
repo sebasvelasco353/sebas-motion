@@ -24,7 +24,8 @@ export default {
   color: white;
   @apply flex;
   @apply w-full;
-  @apply p-6;
+  @apply py-6;
+  @apply px-8;
 }
 .footer__inner {
   max-width:  1440px;
@@ -40,6 +41,7 @@ p, a {
   @apply md:text-left;
   @apply text-center;
   margin: 0.5rem 0;
-  @apply text-base;
+  @apply text-3xl;
+  @apply md:text-3xl;
 }
 </style>
