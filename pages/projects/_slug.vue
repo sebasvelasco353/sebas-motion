@@ -5,7 +5,9 @@
       <img :src="require(`@/assets/images/${project.image}`)" :alt="project.title">
       <h1>{{ project.title  }}</h1>
     </section>
-    <nuxt-content class="content" :document="project" />
+    <section class="content">
+      <nuxt-content :document="project" />
+    </section>
   </div>
 </template>
 
@@ -54,5 +56,10 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
+}
+.nuxt-content p {
+  /*@apply md:w-2/4;*/
+  width: 50%;
+  @apply md:text-3xl;
 }
 </style>
