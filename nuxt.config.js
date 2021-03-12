@@ -3,6 +3,13 @@ export default {
   router: {
     base: '/sebas-motion/',
   },
+  generate: {
+    routes: [
+      '/projects/HistoriasEnJuego',
+      '/projects/InstagramPosts',
+      '/projecs/LogoAnimation',
+    ],
+  },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
