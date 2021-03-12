@@ -2,10 +2,6 @@
 Animador y motion graphics artist Colombiano, es bien cool el man.
 
 ## TODO: 
-- [] navbar on big screens
-- [] grid of the 4 project
-- [] only one column in small screens (projects)
-- [] project pages need to work with the new urls
 - [] performance
 - [] SEO on all pages
 
