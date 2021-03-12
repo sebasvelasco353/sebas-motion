@@ -7,7 +7,7 @@ export default {
     routes: [
       '/projects/HistoriasEnJuego',
       '/projects/InstagramPosts',
-      '/projecs/LogoAnimation',
+      '/projects/LogoAnimation',
     ],
   },
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
