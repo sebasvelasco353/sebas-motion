@@ -22,6 +22,8 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
+    console.log('async run:');
+    console.log(params);
     const project = await $content('projects', params.slug).fetch();
     return { project };
   },
