@@ -1,0 +1,13 @@
+{
+  "title": "Instagram Posts",
+  "description": "Collection of instagram posts",
+  "image": "InstagramPosts/Insta1.gif",
+  "image2": "InstagramPosts/Insta2.gif",
+  "image3": "InstagramPosts/Insta3.gif",
+  "url": "/projects/InstagramPosts",
+  "fecha": "22-02-2021",
+  "introText": {
+    "ES": "Estos son un conjunto de proyectos que he publicado en mi página de instagram, algunos son hechos 100% por mí y otros son colaboraciones con otros artistas",
+    "EN": "These are a compilation of works I have posted in my Instagram page, some of them made 100& by myself and others that are collaborations with other artists"
+  }
+}
