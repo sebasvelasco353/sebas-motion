@@ -8,9 +8,9 @@
         Tu navegador no tiene soporte para videos.
       </video>
     </div>
-    <h3 class="mt-12 text-4xl md:text-6xl md:mt-24">
+    <h1 class="mt-12 text-4xl md:text-6xl md:mt-24">
       Sebastián López is an awesome freelance motion designer from Colombia.
-    </h3>
+    </h1>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-52">
     <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32">
       <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  />
@@ -26,7 +26,10 @@ export default {
     projectPreview,
   },
   async asyncData({ $content }) {
-    const projects = await $content('projects', { deep: true }).only(['title', 'image', 'url']).sortBy('fecha', 'desc')
+    const projects = await $content('projects', { deep: true })
+      .only(['title', 'image', 'url'])
+      .sortBy('fecha', 'desc')
+      .limit(4)
       .fetch();
     return {
       projects,

@@ -2,8 +2,12 @@
 Animador y motion graphics artist Colombiano, es bien cool el man.
 
 ## TODO: 
-- [] performance
+- [] Work page
+- [] About page
+- [] Eng - Esp
 - [] SEO on all pages
+- [] performance
+- [] Animations (loading stuff, enter and such)
 
 ## Sebas-motion
 Sebastian is a motion graphics and 2d animation artist from Cali, Colombia and this is his portfolio, it is

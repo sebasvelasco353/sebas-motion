@@ -26,7 +26,6 @@ export default {
     },
   },
   data() {
-    console.log(this.element);
     return {};
   },
 };
