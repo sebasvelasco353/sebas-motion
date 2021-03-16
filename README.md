@@ -7,7 +7,8 @@ Animador y motion graphics artist Colombiano, es bien cool el man.
 - [] Eng - Esp
 - [] SEO on all pages
 - [] performance
-- [] Animations (loading stuff, enter and such)
+- [] Animations (loading stuff, enter and such) -- Using the Vue transitions
+  - Refactor the menu Animation
 
 ## Sebas-motion
 Sebastian is a motion graphics and 2d animation artist from Cali, Colombia and this is his portfolio, it is
