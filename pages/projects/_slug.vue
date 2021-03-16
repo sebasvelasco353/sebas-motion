@@ -5,7 +5,7 @@
       <h1>{{ project.title }}</h1>
     </section>
     <section class="content">
-      <p class="w-full mx-0 md:w-3/4 lg:w-2/4">{{ project.introText.ES }}</p>
+      <p>{{ project.introText.ES }}</p>
       <div class="flex flex-col my-10 md:flex-row content-images">
         <img :src="require(`@/assets/images/${project.image2}`)" alt="${project.altText2}" class="flex-1 my-4 box-border md:w-2/4 md:pr-4 md:my-0">
           <img :src="require(`@/assets/images/${project.image3}`)" alt="${project.altText3}" class="flex-1 my-4 md:w-2/4 box-border md:pl-4 md:my-0">
@@ -22,8 +22,6 @@ export default {
     };
   },
   async asyncData({ $content, params }) {
-    console.log('async run:');
-    console.log(params);
     const project = await $content('projects', params.slug).fetch();
     return { project };
   },

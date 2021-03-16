@@ -29,17 +29,15 @@ export default {
 }
 .footer__inner {
   max-width:  1440px;
-  @apply mx-auto;
-  @apply flex;
-  @apply flex-col;
-  @apply md:flex-row;
-  @apply w-full;
-  @apply justify-between;
-  @apply md:pl-20;
+  @apply mx-auto text-left flex flex-col w-full justify-between;
+  @apply md:flex-row md:pl-20;
+}
+.left, .right {
+  flex: 1;
 }
 p, a {
-  @apply md:text-left;
   @apply text-center;
+  @apply md:text-left;
   margin: 0.5rem 0;
   @apply text-3xl;
   @apply md:text-3xl;
