@@ -7,7 +7,16 @@ Animador y motion graphics artist Colombiano, es bien cool el man.
 - [] Eng - Esp
 - [] SEO on all pages
 - [] performance
-- [] Animations (loading stuff, enter and such)
+- [] Animations (loading stuff, enter and such) -- Using the Vue transitions
+  - Refactor the menu Animation
+
+## Animation transitions examples
+- https://www.youtube.com/watch?v=9UpZpH2KjY0&t=2s
+- maybe adding a div that covers the element and shrink it on enter?
+  - we could have a general transition for things that we want to behave the same way
+- fading in/out?
+- fading in + down to up https://www.awwwards.com/sites/dogstudio-1 - https://daphnelaunay.fr/categories/project
+- https://www.hellomonday.com/
 
 ## Sebas-motion
 Sebastian is a motion graphics and 2d animation artist from Cali, Colombia and this is his portfolio, it is
