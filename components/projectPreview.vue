@@ -51,4 +51,5 @@ export default {
   @apply rounded-2xl;
   @apply text-white;
 };
+
 </style>
