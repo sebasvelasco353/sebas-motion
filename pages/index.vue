@@ -12,16 +12,15 @@
       Sebastián López is an awesome freelance motion designer from Colombia.
     </h1>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-52">
-    <!--transition name="test" appear-->
       <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32">
         <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  />
       </div>
-    <!--/transition-->
    </div>
 </template>
 
 <script>
 import projectPreview from '../components/projectPreview.vue';
+import gsap from "gsap";
 
 export default {
   components: {
@@ -37,12 +36,22 @@ export default {
       projects,
     };
   },
+  mounted() {
+    this.$nextTick(function () {
+      // Code that will run only after the
+      // entire view has been rendered
+      gsap.to("h1", { duration: 1, x: 0 });
+    })
+  }
 };
 </script>
 
 <style scoped>
 h3 {
   padding: 0 20%;
+}
+h1 {
+  transform: translateX(-10000px);
 }
 /*.test-enter-active, .test-leave-active{
   transition: 1.5s;
