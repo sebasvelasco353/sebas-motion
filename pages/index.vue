@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="home">
     <div class="w-full reel">
       <!-- TODO: poner auto-play cuando termine pq me estoy enloqueciendo con la
       musica cada segundo -->
@@ -38,8 +38,6 @@ export default {
   },
   mounted() {
     this.$nextTick(function () {
-      // Code that will run only after the
-      // entire view has been rendered
       gsap.to("h1", { duration: 1, x: 0 });
     })
   }
@@ -53,11 +51,7 @@ h3 {
 h1 {
   transform: translateX(-10000px);
 }
-/*.test-enter-active, .test-leave-active{
-  transition: 1.5s;
+.home {
+  overflow-x: hidden;
 }
-.test-enter, .test-leave-to {
-  transform: translateY(1000vh);
-  opacity: 0;
-  }*/
 </style>
