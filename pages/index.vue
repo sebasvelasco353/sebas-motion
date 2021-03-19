@@ -12,9 +12,11 @@
       Sebastián López is an awesome freelance motion designer from Colombia.
     </h1>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-52">
-    <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32">
-      <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  />
-    </div>
+    <!--transition name="test" appear-->
+      <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32">
+        <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  />
+      </div>
+    <!--/transition-->
    </div>
 </template>
 
@@ -42,4 +44,11 @@ export default {
 h3 {
   padding: 0 20%;
 }
+/*.test-enter-active, .test-leave-active{
+  transition: 1.5s;
+}
+.test-enter, .test-leave-to {
+  transform: translateY(1000vh);
+  opacity: 0;
+  }*/
 </style>

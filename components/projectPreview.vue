@@ -51,5 +51,11 @@ export default {
   @apply rounded-2xl;
   @apply text-white;
 };
-
+.test-enter-active, .test-leave-active{
+  transition: 1.5s;
+}
+.test-enter, .test-leave-to {
+  transform: translateY(1000vh);
+  opacity: 0;
+}
 </style>

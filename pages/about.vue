@@ -28,17 +28,19 @@ export default {
   min-height: 65vh;
 }
 .content-enter-active, .content-leave-active{
-  transition: transform 1s;
+  transition: 1.5s;
   transition-delay: 0.5s;
 }
 .content-enter, .content-leave-to {
   transform: translateX(-1000px);
+  opacity: 0;
 }
 
 .title-enter-active, .title-leave-active{
-  transition: transform 1s;
+  transition: 1.5s;
 }
 .title-enter, .title-leave-to {
   transform: translateX(-1000px);
+  opacity: 0;
 }
 </style>
