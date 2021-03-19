@@ -30,39 +30,6 @@ export default {
   data() {
     return {};
   },
-  created() {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll)
-  },
-  methods: {
-    handleScroll() {
-      var doc = document.documentElement;
-      let positionY = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-      const elementTop = this.$refs.projectPreview.getBoundingClientRect().top
-      if(elementTop <= positionY) {
-        this.scrollAnimation_left();
-        this.scrollAnimation_right();
-      }
-    },
-    scrollAnimation_left() {
-     return gsap.to("._left", {
-        x: 0,
-        duration: 1,
-        opacity: 1,
-        display: 'block'
-      });
-    },
-    scrollAnimation_right() {
-      return gsap.to("._right", {
-        x: 0,
-        duration: 1,
-        opacity: 1,
-        display: 'block'
-      });
-    }
-  },
   mounted() {
   }
 };
@@ -70,12 +37,10 @@ export default {
 
 <style scoped>
 ._left {
-  display: none;
   opacity: 0;
   transform: translateX(-10000px);
 }
 ._right {
-  display: none;
   opacity: 0;
   transform: translateX(10000px);
 }
