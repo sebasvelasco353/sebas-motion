@@ -2,21 +2,10 @@
 Animador y motion graphics artist Colombiano, es bien cool el man.
 
 ## TODO: 
-- [] Work page
-- [] About page
 - [] Eng - Esp
 - [] SEO on all pages
 - [] performance
-- [] Animations (loading stuff, enter and such) -- Using the Vue transitions
-  - Refactor the menu Animation
-
-## Animation transitions examples
-- https://www.youtube.com/watch?v=9UpZpH2KjY0&t=2s
-- maybe adding a div that covers the element and shrink it on enter?
-  - we could have a general transition for things that we want to behave the same way
-- fading in/out?
-- fading in + down to up https://www.awwwards.com/sites/dogstudio-1 - https://daphnelaunay.fr/categories/project
-- https://www.hellomonday.com/
+- [] Refactor the menu Animation
 
 ## Sebas-motion
 Sebastian is a motion graphics and 2d animation artist from Cali, Colombia and this is his portfolio, it is
@@ -27,3 +16,7 @@ feel free to check his [Instagram](https://www.instagram.com/sebas_motion)
 ## CI with github Pages and Github Actions
 this project has a .github folder that has the workflow needed to deploy a nuxt application as a 
 static web page in gh pages using gh actions, feel free to use that information as needed.
+
+## Internationalization
+the multiLenguaje is being done using [Nuxt's i18n module](https://i18n.nuxtjs.org) and
+[this tutorial](https://phrase.com/blog/posts/nuxt-js-tutorial-i18n/#External_JSON_or_JS_Files)

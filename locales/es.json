@@ -1,0 +1,15 @@
+{
+  "no-video": "Tu navegador no tiene soporte para videos.",
+  "index": {
+    "menu": "INICIO",
+    "title": "Sebastian Lopez es un animador freelance Colombiano." 
+  },
+  "work": {
+    "menu": "PROYECTOS",
+    "title": "Proyectos",
+    "intro-text": "Esta es una coleccion de mis trabajos y proyectos, puedes dar click en los que desees conocer"
+  },
+  "about": {
+    "menu": "SOBRE DE MI"
+  }
+}

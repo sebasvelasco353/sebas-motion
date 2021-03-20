@@ -1,10 +1,10 @@
 <template>
 <div class="work">
   <transition name="title" appear>
-    <h1>Work</h1>
+    <h1>{{ $t('work.title') }}</h1>
   </transition>
   <transition name="content" appear>
-    <p>A collection of my work, feel free to enter each one of them.</p>
+    <p>{{ $t('work.intro-text') }}</p>
   </transition>
   <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32" ref="projectPreview">
     <project-preview v-for="(project, index) in projects" :element="project" :key="project.title" :index="index" />
