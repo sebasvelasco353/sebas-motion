@@ -1,3 +1,6 @@
+import en from './locales/en.json';
+import es from './locales/es.json';
+
 export default {
   target: 'static',
   router: {
@@ -50,8 +53,18 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/content
     '@nuxt/content',
+     [
+       'nuxt-i18n',
+       {
+         locales: ['en', 'es'],
+         defaultLocales: 'es',
+         vueI18n: {
+           fallbackLocale: 'es',
+           messages: { es, en }
+         }
+       }
+     ]
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content

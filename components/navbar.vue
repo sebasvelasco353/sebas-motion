@@ -1,5 +1,5 @@
 <template>
-  <!-- TODO: only trigger animation on menbu click small screens, no animation on startup its the correct way of doing stuff  -->
+  <!-- TODO: only trigger animation on menu click small screens, no animation on startup its the correct way of doing stuff  -->
   <header class="nav__container">
     <div class="nav__inner">
       <div class="z-20 flex flex-row justify-between">
