@@ -3,9 +3,9 @@
   <header class="nav__container">
     <div class="nav__inner">
       <div class="z-20 flex flex-row justify-between">
-        <a class="w-24 m-0" href="/sebas-motion/">
+        <nuxt-link class="w-24 m-0" :to="localePath('/')">
           <img class="align-middle" src="@/assets/logo.svg" alt="Sebas.Motion Logo">
-        </a>
+        </nuxt-link>
         <button class="md:hidden" v-on:click="menuClick()">
           <svg viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="15" rx="8"></rect>
@@ -18,8 +18,8 @@
         class="absolute left-0 z-10 flex flex-col justify-center w-full h-screen text-center align-middle bg-black -top-full md:relative md:w-auto md:flex-row md:top-0 py-44 md:h-auto md:py-0"
         :class="navClasses"
       >
-        <a class="my-5 md:m-0 md:mx-5 hover:underline" href="/sebas-motion/work">Work</a>
-        <a class="my-5 md:m-0 hover:underline" href="/sebas-motion/about">About</a>
+        <nuxt-link :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
+        <nuxt-link :to="localePath('about')" class="my-5 md:m-0 hover:underline">{{ $t('about.menu') }}</nuxt-link>
       </nav>
     </div>
   </header>
