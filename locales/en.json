@@ -1,5 +1,10 @@
 {
+  "no-video": "Your browser doesnt support videos.",
   "index": {
     "title": "Sebastián López is a freelance motion designer from Colombia."
+  },
+  "work": {
+    "title": "Work",
+    "intro-text": "This is a collection of my projects and works, feel free to click the ones you want to see more of"
   }
 }
