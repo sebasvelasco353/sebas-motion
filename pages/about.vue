@@ -5,6 +5,7 @@
  </transition>
  <transition name="content" appear>
    <p>Hello, My name is Sebastián López and I'm a Motion Designer from Cali, Colombia. I hope you like my work and have a good time scrolling through my webpage.</p>
+   <p>Hello, My name is Sebastián López and I'm a Motion Designer from Cali, Colombia. I hope you like my work and have a good time scrolling through my webpage.</p>
  </transition>
 </div>
 </template>
@@ -25,6 +26,7 @@ export default {
 
 <style scoped>
 .about-content {
+  overflow-x: hidden;
   min-height: 65vh;
 }
 .content-enter-active, .content-leave-active{
