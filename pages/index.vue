@@ -3,12 +3,13 @@
     <div class="w-full reel">
       <video height="100%" width="100%" class="rounded-2xl" controls autoplay>
         <source src="@/assets/video/Reel_2021.mp4" type="video/mp4">
-        Tu navegador no tiene soporte para videos.
+        {{ $t('no-video') }} 
       </video>
     </div>
     <h1 class="mt-12 text-4xl md:text-6xl md:mt-24">
-      Sebastián López is an awesome freelance motion designer from Colombia.
+      {{ $t('index.title') }}
     </h1>
+    <p></p>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-52">
       <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32" ref="projectPreview">
         <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  />

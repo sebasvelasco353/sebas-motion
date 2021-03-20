@@ -1,3 +1,6 @@
 {
-  "message": "que se dice mi pez!"
+  "no-video": "Tu navegador no tiene soporte para videos.",
+  "index": {
+    "title": "Sebastian Lopez es un animador freelance Colombiano." 
+  }
 }
