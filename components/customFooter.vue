@@ -6,9 +6,9 @@
         <p>{{ new Date().getFullYear() }}</p>
       </div>
       <div class="right">
-         <p>sebas@motion.com</p>
-         <p>+57 1234567890</p>
-        <p><a href="https://www.instagram.com/sebas_motion/">Instagram: @Sebas_motion</a></p>
+         <p>sebaslopez9623@gmail.com</p>
+         <p>+57 3174759235</p>
+        <p><a href="https://www.instagram.com/sebas_motion/">@Sebas_motion</a></p>
       </div>
     </div>
   </footer>

@@ -1,7 +1,11 @@
 <template>
 <div class="work">
-  <h1>Work</h1>
-  <p>A collection of my work, feel free to enter each one of them.</p>
+  <transition name="title" appear>
+    <h1>Work</h1>
+  </transition>
+  <transition name="content" appear>
+    <p>A collection of my work, feel free to enter each one of them.</p>
+  </transition>
   <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32" ref="projectPreview">
     <project-preview v-for="(project, index) in projects" :element="project" :key="project.title" :index="index" />
   </div>
@@ -52,6 +56,21 @@ export default {
 </script>
 
 <style>
+.content-enter-active, .content-leave-active{
+  transition: 1.5s;
+  transition-delay: 0.5s;
+}
+.content-enter, .content-leave-to {
+  transform: translateX(-1000px);
+  opacity: 0;
+}
+.title-enter-active, .title-leave-active{
+  transition: 1.5s;
+}
+.title-enter, .title-leave-to {
+  transform: translateX(-1000px);
+  opacity: 0;
+}
 .work {
   overflow-x: hidden;
 }
