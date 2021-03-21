@@ -20,8 +20,8 @@ export default {
   components: {
     projectPreview,
   },
-  async asyncData({ $content }) {
-    const projects = await $content('projects', { deep: true })
+  async asyncData({ $content, app }) {
+    const projects = await $content(`projects/${app.i18n.locale}`, { deep: true })
       .only(['title', 'image', 'url'])
       .sortBy('fecha', 'desc')
       .fetch();
