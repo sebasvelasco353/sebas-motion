@@ -1,5 +1,5 @@
 <template>
-<nuxt-link :to="`${element.url}`" class="mx-0 col-span-1" :class="positionClass" exact>
+<nuxt-link :to="localePath(`${element.url}`)" class="mx-0 col-span-1" :class="positionClass" exact>
   <div class="projPreview__container" ref="projectPreview">
     <img class="bg" :src="require(`@/assets/images/${element.image}`)" :alt="element.title" />
     <p class="absolute z-30 w-full text-3xl text-center break-words">{{ element.title }}</p>
