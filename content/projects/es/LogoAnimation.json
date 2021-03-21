@@ -6,8 +6,5 @@
   "image3": "LogoAnimation/Logo3.gif",
   "url": "/projects/LogoAnimation",
   "fecha": "22-02-2021",
-  "introText": {
-    "ES": "Estas son algunas de las animaciones de logo que he hecho para algunas marcas emergentes del país.",
-    "EN": "These are some of the logo animations I have made for some starting up brands of the country"
-  }
+  "introText": "Estas son algunas de las animaciones de logo que he hecho para algunas marcas emergentes del país."
 }
