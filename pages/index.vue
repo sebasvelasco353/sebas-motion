@@ -48,13 +48,8 @@ export default {
   },
   methods: {
     handleScroll() {
-      var doc = document.documentElement;
-      let positionY = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-      const elementTop = this.$refs.projectPreview.getBoundingClientRect().top
-      if(elementTop <= positionY) {
-        this.scrollAnimation_left();
-        this.scrollAnimation_right();
-      }
+      this.scrollAnimation_left();
+      this.scrollAnimation_right();
     },
     scrollAnimation_left() {
      return gsap.to("._left", {

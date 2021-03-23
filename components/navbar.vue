@@ -20,6 +20,11 @@
       >
         <nuxt-link :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
         <nuxt-link :to="localePath('about')" class="my-5 md:m-0 hover:underline">{{ $t('about.menu') }}</nuxt-link>
+        <nuxt-link
+          v-for="locale in availableLocales"
+          :key="locale.code"
+          :to="switchLocalePath(locale)">{{ locale }}
+        </nuxt-link>
       </nav>
     </div>
   </header>
@@ -30,9 +35,13 @@ export default {
   data() {
     return {
       menuState: window.screen.width > 600,
+      lang: 'es'
     };
   },
   computed: {
+    availableLocales () {
+      return this.$i18n.locales.filter(i => i !== this.$i18n.locale)
+    },
     navClasses() {
       return {
         'animate-menuIn': this.menuState,
@@ -41,6 +50,9 @@ export default {
     },
   },
   methods: {
+    setLocale(locale) {
+      console.log(locale);
+    },
     menuClick() {
       this.menuState = !this.menuState;
     },
@@ -76,5 +88,8 @@ nav {
 }
 rect {
   fill: #01FFFF;
+}
+a {
+  @apply mx-4 my-0 uppercase;
 }
 </style>
