@@ -18,7 +18,7 @@
         class="absolute left-0 z-10 flex flex-col justify-center w-full h-screen text-center align-middle bg-black -top-full md:relative md:w-auto md:flex-row md:top-0 py-44 md:h-auto md:py-0"
         :class="navClasses"
       >
-        <nuxt-link :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
+        <nuxt-link v-on:click="console.log('cosa')" :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
         <nuxt-link :to="localePath('about')" class="my-5 md:m-0 hover:underline">{{ $t('about.menu') }}</nuxt-link>
         <nuxt-link
           v-for="locale in availableLocales"
@@ -35,9 +35,13 @@ export default {
   data() {
     return {
       menuState: window.screen.width > 600,
-      lang: 'es'
     };
   },
+  watch:{
+    $route (to, from){
+        this.menuState = false;
+    }
+  }, 
   computed: {
     availableLocales () {
       return this.$i18n.locales.filter(i => i !== this.$i18n.locale)
