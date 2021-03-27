@@ -38,7 +38,6 @@ export default {
   },
   watch:{
     $route (to, from){
-      console.log(window.screen.width)
       if (window.screen.width < 600) this.menuClick(true);
     }
   }, 
@@ -54,9 +53,6 @@ export default {
     },
   },
   methods: {
-    setLocale(locale) {
-      console.log(locale);
-    },
     menuClick(state) {
       this.menuState = state;
       switch(this.menuState){
@@ -72,7 +68,6 @@ export default {
             duration: 1
           })
       }
-      console.log(this.menuState)
     },
   },
 };
