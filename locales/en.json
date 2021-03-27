@@ -10,6 +10,8 @@
     "intro-text": "This is a collection of my projects and works, feel free to click the ones you want to see more of"
   },
   "about": {
-    "menu": "ABOUT"
+    "menu": "ABOUT",
+    "title": "About Me",
+    "intro-text": "Hello, My name is Sebastián López and I'm a Motion Designer from Cali, Colombia. I hope you like my work and have a good time scrolling through my webpage."
   }
 }

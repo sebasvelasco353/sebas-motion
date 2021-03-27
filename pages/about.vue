@@ -1,10 +1,10 @@
 <template>
 <div class="about-content">
  <transition-group name="title" appear>
-   <h1 key="title">About Me</h1>
+   <h1 key="title">{{ $t('about.title') }}</h1>
  </transition-group>
  <transition-group name="content" appear>
-   <p key="content">Hello, My name is Sebastián López and I'm a Motion Designer from Cali, Colombia. I hope you like my work and have a good time scrolling through my webpage.</p>
+   <p key="content">{{ $t('about.intro-text') }}</p>
  </transition-group>
 </div>
 </template>

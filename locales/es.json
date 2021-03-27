@@ -10,6 +10,8 @@
     "intro-text": "Esta es una coleccion de mis trabajos y proyectos, puedes dar click en los que desees conocer"
   },
   "about": {
-    "menu": "SOBRE DE MI"
+    "menu": "SOBRE DE MI",
+    "title": "Sobre Mi",
+    "intro-text": "Mi nombre es Sebastian Lopez y soy un animador de Cali, Colombia. Espero que te gusten mis trabajos y disfrutes tu paso por mi portafolio."
   }
 }
