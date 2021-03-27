@@ -14,11 +14,8 @@
           </svg>
         </button>
       </div>
-      <nav
-        class="absolute left-0 z-10 flex flex-col justify-center w-full h-screen text-center align-middle bg-black -top-full md:relative md:w-auto md:flex-row md:top-0 py-44 md:h-auto md:py-0"
-        :class="navClasses"
-      >
-        <nuxt-link v-on:click="console.log('cosa')" :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
+      <nav :class="navClasses">
+        <nuxt-link :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
         <nuxt-link :to="localePath('about')" class="my-5 md:m-0 hover:underline">{{ $t('about.menu') }}</nuxt-link>
         <nuxt-link
           v-for="locale in availableLocales"
@@ -48,8 +45,8 @@ export default {
     },
     navClasses() {
       return {
-        'animate-menuIn': this.menuState,
-        'animate-menuOut': !this.menuState,
+        /*'animate-menuIn': this.menuState,*/
+        /*'animate-menuOut': !this.menuState,*/
       };
     },
   },
@@ -89,6 +86,7 @@ header{
 nav {
   animation-fill-mode: forwards;
   @apply md:bg-opacity-0;
+  @apply absolute left-0 z-10 flex flex-col justify-center w-full h-screen text-center align-middle bg-black md:relative md:w-auto md:flex-row md:top-0 py-44 md:h-auto md:py-0;
 }
 rect {
   fill: #01FFFF;
