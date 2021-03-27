@@ -104,7 +104,7 @@ nav {
   animation-fill-mode: forwards;
   top: -100vh;
   @apply md:bg-opacity-0;
-  @apply absolute left-0 z-10 flex flex-col justify-center w-full h-screen text-center align-middle bg-black md:relative md:w-auto md:flex-row md:top-0 py-44 md:h-auto md:py-0;
+  @apply absolute left-0 z-10 flex flex-col justify-center w-full h-screen text-center align-middle md:relative md:w-auto md:flex-row md:top-0 py-44 md:h-auto md:py-0;
 }
 rect {
   fill: #01FFFF;
