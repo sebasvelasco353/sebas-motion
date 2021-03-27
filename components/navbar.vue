@@ -28,6 +28,8 @@
 </template>
 
 <script>
+import gsap from "gsap";
+
 export default {
   data() {
     return {
@@ -55,7 +57,21 @@ export default {
       console.log(locale);
     },
     menuClick() {
+      switch(this.menuState){
+        case false:
+          gsap.to("nav", {
+            y: window.innerHeight,
+            duration: 1
+          })
+          break;
+        case true:
+          gsap.to("nav", {
+            y: 0,
+            duration: 1
+          })
+      }
       this.menuState = !this.menuState;
+      console.log(this.menuState)
     },
   },
 };
@@ -85,6 +101,7 @@ header{
 }
 nav {
   animation-fill-mode: forwards;
+  top: -100vh;
   @apply md:bg-opacity-0;
   @apply absolute left-0 z-10 flex flex-col justify-center w-full h-screen text-center align-middle bg-black md:relative md:w-auto md:flex-row md:top-0 py-44 md:h-auto md:py-0;
 }
