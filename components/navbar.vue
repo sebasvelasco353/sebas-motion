@@ -14,7 +14,7 @@
           </svg>
         </button>
       </div>
-      <nav :class="navClasses">
+      <nav>
         <nuxt-link  :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
         <nuxt-link :to="localePath('about')" class="my-5 md:m-0 hover:underline">{{ $t('about.menu') }}</nuxt-link>
         <nuxt-link
@@ -44,12 +44,6 @@ export default {
   computed: {
     availableLocales () {
       return this.$i18n.locales.filter(i => i !== this.$i18n.locale)
-    },
-    navClasses() {
-      return {
-        /*'animate-menuIn': this.menuState,*/
-        /*'animate-menuOut': !this.menuState,*/
-      };
     },
   },
   methods: {

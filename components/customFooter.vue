@@ -49,6 +49,7 @@ export default {
 }
 .left, .right {
   flex: 1;
+  @apply text-center md:text-left;
 }
 p, a {
   @apply text-center;
@@ -61,6 +62,6 @@ img {
   @apply mx-4;
 }
 .footer-icons {
-  @apply flex flex-row align-middle;
+  @apply flex flex-row align-middle justify-center md:justify-start;
 }
 </style>
