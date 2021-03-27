@@ -29,7 +29,7 @@ export default {
       {hid: 'robots', name: 'robots', content: 'index, follow'},
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/logo.svg'},
+      {rel: 'icon', type: 'image/x-icon', href: 'favicon.ico'},
     ],
   },
 
