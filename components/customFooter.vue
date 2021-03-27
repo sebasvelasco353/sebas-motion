@@ -6,9 +6,24 @@
         <p>{{ new Date().getFullYear() }}</p>
       </div>
       <div class="right">
-         <p>sebaslopez9623@gmail.com</p>
-         <p>+57 3174759235</p>
-        <p><a href="https://www.instagram.com/sebas_motion/">@Sebas_motion</a></p>
+        <a href="mailto:sebaslopez9623@gmail.com" alt="Sebd me an email">sebaslopez9623@gmail.com</a>
+        <div class="footer-icons">
+          <a href="https://www.instagram.com/sebas_motion/">
+            <img src="@/assets/images/footer_icons/instagram.png" alt="Instagram" class="w-10 h-10 align-middle">
+          </a>
+          <a href="https://dribbble.com/sebas_motion">
+            <img src="@/assets/images/footer_icons/dribble.png" alt="Dribble" class="w-10 h-10 align-middle">
+          </a>
+          <a href="https://www.linkedin.com/in/sebastianlopezcastro/">
+            <img src="@/assets/images/footer_icons/linkedin.png" alt="Linkedin" class="w-10 h-10 align-middle">
+          </a>
+          <a href="https://twitch.tv/sebas_motion">
+            <img src="@/assets/images/footer_icons/twitch.png" alt="Twitch" class="w-10 h-10 align-middle">
+          </a>
+          <a href="https://wa.me/+573174759235">
+            <img src="@/assets/images/footer_icons/whatsapp.png" alt="Whatsapp" class="w-10 h-10 align-middle">
+          </a>
+        </div> 
       </div>
     </div>
   </footer>
@@ -41,5 +56,11 @@ p, a {
   margin: 0.5rem 0;
   @apply text-3xl;
   @apply md:text-3xl;
+}
+img {
+  @apply mx-4;
+}
+.footer-icons {
+  @apply flex flex-row align-middle;
 }
 </style>
