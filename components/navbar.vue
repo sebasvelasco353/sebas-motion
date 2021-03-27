@@ -6,7 +6,7 @@
         <nuxt-link class="w-24 m-0" :to="localePath('/')">
           <img class="align-middle" src="@/assets/logo.svg" alt="Sebas.Motion Logo">
         </nuxt-link>
-        <button class="md:hidden" v-on:click="menuClick()">
+        <button class="md:hidden" v-on:click="menuClick(!menuState)">
           <svg viewBox="0 0 100 80" width="40" height="40">
             <rect width="100" height="15" rx="8"></rect>
             <rect y="30" width="100" height="15" rx="8"></rect>
@@ -15,7 +15,7 @@
         </button>
       </div>
       <nav :class="navClasses">
-        <nuxt-link :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
+        <nuxt-link  :to="localePath('work')" class="my-5 md:m-0 md:mx-5 hover:underline">{{ $t('work.menu') }}</nuxt-link>
         <nuxt-link :to="localePath('about')" class="my-5 md:m-0 hover:underline">{{ $t('about.menu') }}</nuxt-link>
         <nuxt-link
           v-for="locale in availableLocales"
@@ -38,7 +38,8 @@ export default {
   },
   watch:{
     $route (to, from){
-        this.menuState = false;
+      console.log(window.screen.width)
+      if (window.screen.width < 600) this.menuClick(true);
     }
   }, 
   computed: {
@@ -56,7 +57,8 @@ export default {
     setLocale(locale) {
       console.log(locale);
     },
-    menuClick() {
+    menuClick(state) {
+      this.menuState = state;
       switch(this.menuState){
         case false:
           gsap.to("nav", {
@@ -70,7 +72,6 @@ export default {
             duration: 1
           })
       }
-      this.menuState = !this.menuState;
       console.log(this.menuState)
     },
   },
