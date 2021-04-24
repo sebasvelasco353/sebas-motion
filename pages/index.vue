@@ -12,7 +12,7 @@
     <p></p>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-52">
       <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32" ref="projectPreview">
-        <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  />
+        <!--project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  /-->
       </div>
    </div>
 </template>
@@ -26,14 +26,14 @@ export default {
     projectPreview,
   },
   async asyncData({ $content, app }) {
-    const projects = await $content(`projects/${app.i18n.locale}`, { deep: true })
-      .only(['title', 'image', 'url'])
-      .sortBy('fecha', 'desc')
-      .limit(4)
-      .fetch();
-    return {
-      projects,
-    };
+    /*const projects = await $content(`projects/`, { deep: true })*/
+      /*.only(['title', 'image', 'url'])*/
+      /*.sortBy('fecha', 'desc')*/
+      /*.limit(4)*/
+      /*.fetch();*/
+    /*return {*/
+      /*projects,*/
+    /*};*/
   },
   mounted() {
     this.$nextTick(function () {

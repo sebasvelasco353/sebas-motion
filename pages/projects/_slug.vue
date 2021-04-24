@@ -1,6 +1,7 @@
 <template>
   <div>
     Hello
+    <img :src="project.thumbnail" alt="">
   </div>
 </template>
 
