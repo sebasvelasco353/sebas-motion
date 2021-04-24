@@ -1,0 +1,26 @@
+backend:
+  name: github
+  repo: sebasvelasco353/sebas-motion
+  branch: master
+
+local_backend: true
+
+media_folder: assets/images
+public_folder: /images
+
+collections:
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'content/projects'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Image2", name: "thumbnail2", widget: "image" }
+      - { label: "Image3", name: "thumbnail3", widget: "image" }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
