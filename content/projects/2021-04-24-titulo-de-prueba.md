@@ -1,8 +1,0 @@
----
-title: titulo de prueba
-description: i,yjmhfg
-thumbnail: /img/171153021_123015429870529_6938352389265443685_n.jpg
-thumbnail2: /img/171153021_123015429870529_6938352389265443685_n.jpg
-thumbnail3: /img/171153021_123015429870529_6938352389265443685_n.jpg
----
-,gj,g,gjkjhjfhjfgfgyher
