@@ -5,20 +5,22 @@ backend:
 
 local_backend: true
 
-media_folder: static/img
-public_folder: /img
+media_folder: assets/images
+public_folder: /images
 
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: 'content/blog'
+  - name: 'projects'
+    label: 'Projects'
+    folder: 'content/projects'
     format: 'frontmatter'
     create: true
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
       - { label: 'Description', name: 'description', widget: 'string' }
+      - { label: "Image", name: "thumbnail", widget: "image" }
+      - { label: "Image2", name: "thumbnail2", widget: "image" }
+      - { label: "Image3", name: "thumbnail3", widget: "image" }
       - { label: 'Body', name: 'body', widget: 'markdown' }
