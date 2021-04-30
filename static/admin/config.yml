@@ -6,7 +6,7 @@ backend:
 local_backend: true
 
 media_folder: assets/images
-public_folder: /sebas-motion/_nuxt/assets/images
+#public_folder: /sebas-motion/_nuxt/assets/images
 
 collections:
   - name: 'projects'

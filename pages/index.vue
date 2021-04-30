@@ -26,14 +26,14 @@ export default {
     projectPreview,
   },
   async asyncData({ $content, app }) {
-    /*const projects = await $content(`projects/`, { deep: true })*/
-      /*.only(['title', 'image', 'url'])*/
-      /*.sortBy('fecha', 'desc')*/
-      /*.limit(4)*/
-      /*.fetch();*/
-    /*return {*/
-      /*projects,*/
-    /*};*/
+    const projects = await $content('projects', { deep: true })
+      .only(['title', 'thumbnail', 'url'])
+      .sortBy('fecha', 'desc')
+      .limit(4)
+      .fetch();
+    return {
+      projects,
+    };
   },
   mounted() {
     this.$nextTick(function () {
