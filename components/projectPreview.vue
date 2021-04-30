@@ -1,7 +1,7 @@
 <template>
-<nuxt-link :to="localePath(`${element.url}`)" class="mx-0 col-span-1" :class="positionClass" exact>
+<nuxt-link :to="localePath(`${element.path}`)" class="mx-0 col-span-1" :class="positionClass" exact>
   <div class="projPreview__container" ref="projectPreview">
-    <img class="bg" :src="require(`@/assets/images/${element.image}`)" :alt="element.title" />
+    <img class="bg" :src="`..${element.thumbnail}`" :alt="element.title" />
     <p class="absolute z-30 w-full text-3xl text-center break-words">{{ element.title }}</p>
   </div>
 </nuxt-link>
@@ -24,6 +24,9 @@ export default {
       const position = ((this.index + 1) % 3 === 0) || ((this.index + 1) % 2 === 0) ? 'row-span-2 _right' : 'row-span-1 _left';
       return position;
     },
+    /*getImage() {*/
+      /*return require("`..${this.element.thumbnail}`");*/
+    /*}*/
   },
   data() {
     return {};
