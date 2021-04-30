@@ -12,7 +12,7 @@
     <p></p>
     <img src="@/assets/images/separator.svg" alt="Separator images" class="mx-auto my-52">
       <div class="flex flex-col my-12 md:my-24 projects md:grid md:grid-cols-2 md:grid-rows-auto md:gap-32" ref="projectPreview">
-        <!--project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index"  /-->
+        <project-preview v-for="(project, index) in projects" :element="project" :key="index" :index="index" />
       </div>
    </div>
 </template>
@@ -31,6 +31,9 @@ export default {
       .sortBy('fecha', 'desc')
       .limit(4)
       .fetch();
+
+    console.log({ projects });
+
     return {
       projects,
     };
