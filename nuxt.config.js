@@ -20,7 +20,7 @@ export default {
   head: {
     title: 'sebas-motion',
     htmlAttrs: {
-      lang: 'en',
+      lang: 'es',
     },
     meta: [
       {charset: 'utf-8'},
