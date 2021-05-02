@@ -21,8 +21,8 @@ export default {
     projectPreview,
   },
   async asyncData({ $content, app }) {
-    const projects = await $content(`projects/${app.i18n.locale}`, { deep: true })
-      .only(['title', 'image', 'url'])
+    const projects = await $content('projects', { deep: true })
+      .only(['title', 'thumbnail', 'url'])
       .sortBy('fecha', 'desc')
       .fetch();
     return {
@@ -30,8 +30,10 @@ export default {
     };
   },
   mounted() {
-   this.scrollAnimation_left();
-   this.scrollAnimation_right();
+    this.$nextTick(function () {
+      this.scrollAnimation_left();
+      this.scrollAnimation_right();
+    })
   },
   methods: {
     scrollAnimation_left() {

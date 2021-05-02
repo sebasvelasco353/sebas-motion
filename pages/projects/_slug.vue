@@ -13,7 +13,6 @@ export default {
   },
   async asyncData({ $content, app, params }) {
     const project = await $content(`projects/`, params.slug).fetch();
-    console.log(project);
     return { project };
   },
 };

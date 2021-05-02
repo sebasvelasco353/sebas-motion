@@ -22,6 +22,7 @@ import projectPreview from '../components/projectPreview.vue';
 import gsap from "gsap";
 
 export default {
+  name: 'index',
   components: {
     projectPreview,
   },
@@ -31,8 +32,6 @@ export default {
       .sortBy('fecha', 'desc')
       .limit(4)
       .fetch();
-
-    console.log({ projects });
 
     return {
       projects,
